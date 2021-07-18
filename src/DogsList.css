@@ -1,3 +1,7 @@
+.DogsList-dog{
+    cursor: pointer;
+}
+
 .DogList-img{
     object-fit: cover;
     border-radius: 50%;
