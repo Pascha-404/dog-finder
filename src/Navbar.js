@@ -5,7 +5,7 @@ class Navbar extends Component {
 	render() {
 		const dogs = this.props.dogs;
 		const dogLinks = dogs.map((d, idx) => {
-			const to = `/dogs/${d.name.toLowerCase()}`;
+			const to = `/dogs/${d.name}`;
 			return (
                 <NavLink key={idx} exact activeClassName='active' className='nav-link' to={to}>
 					{d.name}
