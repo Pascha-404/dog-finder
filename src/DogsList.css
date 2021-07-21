@@ -2,9 +2,48 @@
     cursor: pointer;
 }
 
+.DogsList-dog a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.DogsList-dog a:hover{
+    color: white;
+}
+
 .DogList-img{
     object-fit: cover;
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
 }
+
+.DogList-img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.DogsList-dog:hover img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.sliding-middle-out {
+  display: inline-block;
+  position: relative;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 4px;
+  width: 0px;
+  background: transparent;
+  transition: width .4s ease, background-color .4s ease;
+}
+.DogsList-dog:hover .sliding-middle-out:after {
+  width: 100%;
+  background: #fff;
+}
+
