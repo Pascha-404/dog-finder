@@ -10,8 +10,11 @@ class DogsList extends Component {
 				className='DogsList-dog col m-md-3 mb-4 mb-md-2 ms-lg-5 d-flex flex-column justify-content-center align-items-center p-0'>
 				<Link to={`/dogs/${d.name}`}>
 					<img className='DogList-img' src={d.src} alt={d.name} />
+				
+					<div>
+						<h2 className="DogsList-name mt-3 sliding-middle-out">{d.name}</h2>
+					</div>
 				</Link>
-				<h2>{d.name}</h2>
 			</div>
 		));
 		return (
