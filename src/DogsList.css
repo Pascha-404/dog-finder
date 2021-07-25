@@ -7,7 +7,7 @@
     color: inherit;
 }
 
-.DogsList-dog a:hover{
+.DogsList-dog a:hover, .DogsList-dog a:focus{
     color: white;
 }
 
@@ -24,7 +24,7 @@
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.DogsList-dog:hover img{
+.DogsList-dog:hover img, .DogsList-dog a:focus img{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
@@ -42,7 +42,7 @@
   background: transparent;
   transition: width .4s ease, background-color .4s ease;
 }
-.DogsList-dog:hover .sliding-middle-out:after {
+.DogsList-dog:hover .sliding-middle-out:after, .DogsList-dog a:focus .sliding-middle-out:after{
   width: 100%;
   background: #fff;
 }
