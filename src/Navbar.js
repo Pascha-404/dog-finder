@@ -5,9 +5,13 @@ class Navbar extends Component {
 	render() {
 		const dogs = this.props.dogs;
 		const dogLinks = dogs.map((d, idx) => {
-			const to = `/dogs/${d.name}`;
 			return (
-                <NavLink key={idx} exact activeClassName='active' className='nav-link' to={to}>
+				<NavLink
+					key={idx}
+					exact
+					activeClassName='active'
+					className='nav-link'
+					to={`/dogs/${d.name}`}>
 					{d.name}
 				</NavLink>
 			);
@@ -30,11 +34,7 @@ class Navbar extends Component {
 					</button>
 					<div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
 						<div className='navbar-nav'>
-                            <NavLink
-                                exact
-								activeClassName='active'
-								className='nav-link'
-								to='/'>
+							<NavLink exact activeClassName='active' className='nav-link' to='/'>
 								Home
 							</NavLink>
 
