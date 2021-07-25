@@ -4,8 +4,8 @@ import "./DogDetails.css"
 class DogDetails extends Component {
     render() {
 		return (
-			<div className='DogDetails container'>
-				<div className="row flex align-items-center justify-content-center">
+			<div className='DogDetails'>
+				<div className="row justify-content-center">
 					<div className="col-11  col-sm-9 col-md-7 col-lg-5 mt-5">
 						<div className="card">
 							<img src={this.props.dog.src} className='DogDetails-img card-img-top' alt={this.props.dog.name} />
